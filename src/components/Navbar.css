@@ -1,0 +1,31 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1000;
+}
+
+.nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: small;
+}
+
+.nav a:hover {
+  color: #6366f1;
+  /* text-decoration: solid; */
+  text-decoration: #6366f1;
+}
+.right{
+    padding-right: 80px;
+}

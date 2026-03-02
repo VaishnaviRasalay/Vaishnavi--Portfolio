@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+.hero,
+.about,
+.skills,
+.projects,
+.contact {
+  scroll-margin-top: 90px;
+}
