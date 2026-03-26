@@ -1,13 +1,21 @@
-import './Navbar.css'
+import { useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="nav">
       <div className="left">
         <h2>Vaishnavi</h2>
       </div>
 
-      <div className="right">
+      {/* Hamburger */}
+      <div className="menu-icon" onClick={() => setOpen(!open)}>
+        ☰
+      </div>
+
+      <div className={open ? "right active" : "right"}>
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -16,7 +24,7 @@ const Navbar = () => {
         <a href="#contact">Contact</a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

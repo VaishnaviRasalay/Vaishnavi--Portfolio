@@ -17,35 +17,53 @@
   margin-left: 25px;
   font-weight: 500;
   transition: 0.3s;
-  cursor: pointer;
   font-size: small;
 }
 
 .nav a:hover {
   color: #6366f1;
-  /* text-decoration: solid; */
-  text-decoration: #6366f1;
 }
-.right{
-    padding-right: 80px;
-}
-.navbar {
+
+.right {
   display: flex;
-  justify-content: space-between;
+  padding-right: 80px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-  }
+/* Hamburger hidden in desktop */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
 
-  .nav-links.active {
-    display: flex;
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 20px;
   }
 
   .menu-icon {
     display: block;
+  }
+
+  .right {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #111827;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .right a {
+    margin: 10px 0;
+  }
+
+  .right.active {
+    display: flex;
   }
 }
