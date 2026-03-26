@@ -1,43 +1,44 @@
-/* 🔹 Navbar container */
+/* ===== NAVBAR ===== */
 .nav {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: #111827;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+
+  padding: 0 20px;
   z-index: 1000;
 }
 
-/* 🔹 Logo */
+/* Logo */
 .left h2 {
   color: white;
+  margin: 0;
 }
 
-/* 🔹 Links (desktop) */
+/* Links (Desktop) */
 .right {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 25px;
 }
 
-/* 🔹 Link styles */
 .nav a {
   color: #f9fafb;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
   font-size: 14px;
+  transition: 0.3s;
 }
 
 .nav a:hover {
   color: #6366f1;
 }
 
-/* 🔹 Hamburger icon */
+/* Hamburger */
 .menu-icon {
   display: none;
   font-size: 28px;
@@ -45,39 +46,33 @@
   cursor: pointer;
 }
 
-/* ================= MOBILE ================= */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .nav {
-    padding: 0 20px;
-  }
 
   /* Show hamburger */
   .menu-icon {
     display: block;
-    position: absolute;
-    right: 20px;
-    z-index: 2000;
   }
 
   /* Hide links initially */
   .right {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
     background-color: #111827;
+
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
   }
 
-  /* Show when active */
+  /* Show menu when clicked */
   .right.active {
-    display: flex !important;
+    display: flex;
   }
 
-  /* Spacing between links */
   .right a {
     margin: 10px 0;
     font-size: 16px;
