@@ -21,4 +21,8 @@
   .projects {
     padding: 60px 20px;
   }
+
+  .projectboxes {
+    grid-template-columns: 1fr;
+  }
 }

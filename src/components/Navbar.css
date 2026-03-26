@@ -1,70 +1,89 @@
-.skills {
-    background: #0f172a;
-    color: #f9fafb;
-    padding: 100px 50px;
-    text-align: center;
-}
-.skills h2 {
-    font-size: 36px;
-    font-weight: 700;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: 60px;
-    position: relative;
+/* ===== NAVBAR ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #111827;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px; /* keep your original spacing */
+  z-index: 1000;
 }
 
-.skills h2::after {
-    content: "";
+/* Logo */
+.left h2 {
+  color: white;
+  margin: 0;
+}
+
+/* Desktop links */
+.right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #6366f1;
+}
+
+/* Hamburger (hidden in desktop) */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* Reduce padding */
+  .nav {
+    padding: 0 20px;
+  }
+
+  /* Show hamburger */
+  .menu-icon {
     display: block;
-    width: 50px;
-    height: 3px;
-    margin: 12px auto 0;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-    border-radius: 10px;
-}
+    position: absolute;
+    right: 20px;
+  }
 
-.box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 25px;
-}
+  /* Hide links initially */
+  .right {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #111827;
 
-.boxes {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    padding: 30px 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    padding: 20px 0;
+  }
+
+  /* Show menu when clicked */
+  .right.active {
+    display: flex;
+  }
+
+  /* Link spacing */
+  .right a {
+    margin: 10px 0;
     font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.skill-icon {
-    font-size: 32px;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-    
-    
-}
-
-.boxes:hover {
-    transform: translateY(-8px);
-    border-color: rgba(139, 92, 246, 0.6);
-    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.25);
-}
-.skills {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .skills {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

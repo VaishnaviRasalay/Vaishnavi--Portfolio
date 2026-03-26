@@ -5,30 +5,34 @@
 }
 
 .formcontainer {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .formcontainer input,
 .formcontainer textarea {
-  padding: 10px;
-  border-radius: 6px;
+  padding: 14px;
+  border-radius: 10px;
   border: none;
 }
 
 .contact-btn {
-  padding: 10px;
-  background: #6366f1;
+  padding: 14px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
+  border-radius: 10px;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .contact {
     padding: 60px 20px;
+  }
+
+  .formcontainer {
+    width: 90%;
   }
 }
