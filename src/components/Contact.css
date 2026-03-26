@@ -1,32 +1,65 @@
+/* CONTACT SECTION */
 .contact {
   background: #0f172a;
   padding: 100px 20px;
   text-align: center;
+  color: white;
 }
 
+/* FORM CONTAINER */
 .formcontainer {
   max-width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
 }
 
+/* INPUT FIELDS */
 .formcontainer input,
 .formcontainer textarea {
   padding: 14px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #020617;   /* 🔥 black input */
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
+/* FOCUS EFFECT */
+.formcontainer input:focus,
+.formcontainer textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* BUTTON */
 .contact-btn {
   padding: 14px;
   background: linear-gradient(90deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
   border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+/* HOVER */
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .contact {
     padding: 60px 20px;
@@ -34,5 +67,6 @@
 
   .formcontainer {
     width: 90%;
+    padding: 20px;
   }
 }

@@ -1,19 +1,88 @@
+/* PROJECT SECTION */
 .projects {
   background: #0f172a;
   padding: 100px 20px;
   text-align: center;
+  color: white;
 }
 
+/* GRID */
 .projectboxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 30px;
 }
 
+/* CARD */
 .projectcard {
-  background: #1f2937;
-  padding: 20px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.projectcard:hover {
+  transform: translateY(-6px);
+  border-color: #6366f1;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.projectcard h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.projectcard p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* BUTTON BASE */
+.projectcard a {
+  text-decoration: none;   /* ❌ remove underline */
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* GITHUB BUTTON */
+.github {
+  border: 1px solid #6366f1;
+  color: #6366f1;
+}
+
+/* GITHUB HOVER */
+.github:hover {
+  background: #6366f1;
+  color: white;
+}
+
+/* LIVE DEMO BUTTON */
+.livedemo {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: white;
+}
+
+/* LIVE DEMO HOVER */
+.livedemo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(139, 92, 246, 0.4);
 }
 
 /* MOBILE */
