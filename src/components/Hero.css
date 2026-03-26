@@ -49,3 +49,15 @@
     box-shadow: 0 12px 30px rgba(139,92,246,0.4);
 }
 
+.hero {
+  display: flex;
+  gap: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

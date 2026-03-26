@@ -31,3 +31,15 @@
 .footer a:hover {
     transform: translateY(-3px);
 }
+.footer {
+  display: flex;
+  gap: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

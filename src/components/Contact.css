@@ -97,3 +97,15 @@
 .sociallinks a:hover {
    transform: translateY(-3px);
 }
+.contact {
+  display: flex;
+  gap: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

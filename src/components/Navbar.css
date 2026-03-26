@@ -29,3 +29,23 @@
 .right{
     padding-right: 80px;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

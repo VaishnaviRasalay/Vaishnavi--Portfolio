@@ -57,3 +57,14 @@
     border-color: rgba(139, 92, 246, 0.6);
     box-shadow: 0 15px 35px rgba(99, 102, 241, 0.25);
 }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

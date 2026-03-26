@@ -102,3 +102,15 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
 }
+.projects {
+  display: flex;
+  gap: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
