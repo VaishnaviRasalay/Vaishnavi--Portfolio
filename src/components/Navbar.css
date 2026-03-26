@@ -57,10 +57,11 @@
 
   /* Show hamburger */
   .menu-icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-  }
+  display: block;
+  position: relative;   /* 🔥 change this */
+  margin-left: auto;    /* push to right */
+  padding-right: 10px;  /* little spacing */
+}
 
   /* Hide links initially */
   .right {
