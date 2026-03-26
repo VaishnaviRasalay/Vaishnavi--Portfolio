@@ -1,116 +1,24 @@
 .projects {
   background: #0f172a;
-  padding: 100px 50px;
-  color: #f9fafb;
+  padding: 100px 20px;
   text-align: center;
-}
-.projects h2 {
-  font-size: 36px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 70px;
-  position: relative;
-}
-
-.projects h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  margin: 12px auto 0;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  border-radius: 10px;
 }
 
 .projectboxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
 .projectcard {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(10px);
-  padding: 30px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  transition: all 0.3s ease;
-  text-align: left;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.projectcard:hover {
-  transform: translateY(-6px);
-  border-color: #6366f1;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.projectcard h5 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.projectcard p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #94a3b8;
-}
-
-.tech {
-  font-size: 13px;
-  color: #a5b4fc;
-  font-weight: 500;
-}
-
-.btn-group {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.projectcard a {
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.github {
-  border: 1px solid #6366f1;
-  color: #6366f1;
-  font-weight: 500;
-}
-
-.github:hover {
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  color: white;
-}
-
-.livedemo {
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  color: white;
-  font-weight: 500;
-}
-
-.livedemo:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
-}
-.projects {
-  display: flex;
-  gap: 40px;
-}
-
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
   .projects {
-    flex-direction: column;
-    gap: 20px;
+    padding: 60px 20px;
   }
 }
