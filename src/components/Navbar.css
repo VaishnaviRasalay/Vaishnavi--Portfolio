@@ -1,3 +1,4 @@
+/* 🔹 Navbar container */
 .nav {
   position: fixed;
   top: 0;
@@ -11,28 +12,32 @@
   z-index: 1000;
 }
 
+/* 🔹 Logo */
+.left h2 {
+  color: white;
+}
+
+/* 🔹 Links (desktop) */
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* 🔹 Link styles */
 .nav a {
   color: #f9fafb;
   text-decoration: none;
-  margin-left: 25px;
   font-weight: 500;
   transition: 0.3s;
-  font-size: small;
+  font-size: 14px;
 }
 
 .nav a:hover {
   color: #6366f1;
 }
 
-.right {
-  display: flex;
-  gap: 20px;
-}
-.right.active {
-  display: flex;
-}
-
-/* Hamburger hidden in desktop */
+/* 🔹 Hamburger icon */
 .menu-icon {
   display: none;
   font-size: 28px;
@@ -40,28 +45,41 @@
   cursor: pointer;
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  .nav {
+    padding: 0 20px;
   }
 
+  /* Show hamburger */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    z-index: 2000;
+  }
+
+  /* Hide links initially */
   .right {
     display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #111827;
     position: absolute;
     top: 80px;
     left: 0;
+    width: 100%;
+    background-color: #111827;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0;
   }
 
-  /* 🔥 THIS IS KEY */
+  /* Show when active */
   .right.active {
     display: flex !important;
   }
 
+  /* Spacing between links */
   .right a {
     margin: 10px 0;
+    font-size: 16px;
   }
 }
