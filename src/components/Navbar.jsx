@@ -10,7 +10,6 @@ const Navbar = () => {
         <h2>Vaishnavi</h2>
       </div>
 
-      {/* Hamburger */}
       <div className="menu-icon" onClick={() => setOpen(!open)}>
         ☰
       </div>

@@ -26,7 +26,7 @@
 
 .right {
   display: flex;
-  padding-right: 80px;
+  gap: 20px;
 }
 
 /* Hamburger hidden in desktop */
