@@ -10,6 +10,17 @@ const Hero = () => {
       <a href="/Vaishnavi Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
   Download Resume
 </a>
+<div className="hero-buttons">
+  <a href="#projects" className="view-btn">View Projects</a>
+  
+  <a href="https://github.com/VaishnaviRasalay" target="_blank" className="social-btn">
+    GitHub
+  </a>
+
+  <a href="https://www.linkedin.com/in/rasalayvaishnavi/" target="_blank" className="social-btn">
+    LinkedIn
+  </a>
+</div>
     </div>
   )
 }

@@ -24,6 +24,7 @@ const Navbar = () => {
         <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
         <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
         <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+        <a href="/Vaishnavi Resume.pdf" target="_blank">Resume</a>
       </div>
     </nav>
   );
