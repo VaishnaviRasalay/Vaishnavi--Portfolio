@@ -8,3 +8,6 @@ html {
 .contact {
   scroll-margin-top: 90px;
 }
+body {
+  padding-top: 70px;
+}

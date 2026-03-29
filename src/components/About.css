@@ -1,25 +1,51 @@
 .about {
   background: #0f172a;
-  color: #cbd5e1;
-  padding: 100px 20px;
+  color: #f9fafb;
+
+  padding: 80px 20px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
+/* SAME HEADING STYLE */
 .about h2 {
-  font-size: 28px;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
+/* SAME LINE */
+.about h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+/* KEY FIX: MATCH CONTENT WIDTH */
 .aboutpara {
-  max-width: 700px;
-  margin: auto;
+  max-width: 600px;   /* 🔥 IMPORTANT change */
+  text-align: center; /* 🔥 MATCH HERO STYLE */
+  font-size: 16px;
+  line-height: 1.7;
+  color: #9ca3af;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
   .about {
-    padding: 60px 20px;
+    padding: 60px 15px;
+  }
+
+  .about h2 {
+    font-size: 26px;
+  }
+
+  .aboutpara {
+    font-size: 14px;
   }
 }

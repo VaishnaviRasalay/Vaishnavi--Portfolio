@@ -1,16 +1,20 @@
 import React from 'react'
-import './About.css'
-
+import "./About.css"
 const About = () => {
   return (
-    <div className='about' id="about">
+    <div>
+       <section className='about' id="about">
       <h2>About Me</h2>
-      <p className='aboutpara'>
-        • Frontend developer with strong JavaScript fundamentals <br />
-  • Experience in React, API integration, and CRUD operations <br />
-  • Built responsive and user-friendly web applications.</p>
+
+      <ul className='aboutpara'>
+        <li>Frontend developer with strong JavaScript fundamentals</li>
+        <li>Experience in React, API integration, and CRUD operations</li>
+        <li>Built responsive and user-friendly web applications</li>
+      </ul>
+    </section>
     </div>
   )
 }
 
 export default About
+

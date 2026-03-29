@@ -4,7 +4,6 @@
   padding: 100px 20px;
   text-align: center;
   color: white;
-  
 }
 
 /* FORM CONTAINER */
@@ -20,12 +19,8 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 30px;
-}
-.sociallinks{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap:15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* INPUT FIELDS */
@@ -34,13 +29,19 @@
   padding: 14px;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.1);
-  background: #020617;   /* 🔥 black input */
+  background: #020617;
   color: white;
   font-size: 14px;
   transition: 0.3s;
 }
 
-/* FOCUS EFFECT */
+/* PLACEHOLDER */
+.formcontainer input::placeholder,
+.formcontainer textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* FOCUS */
 .formcontainer input:focus,
 .formcontainer textarea:focus {
   outline: none;
@@ -60,10 +61,32 @@
   transition: 0.3s;
 }
 
-/* HOVER */
+/* BUTTON HOVER */
 .contact-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* SOCIAL LINKS */
+.sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* LINKS STYLE */
+.sociallinks a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #6366f1;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.sociallinks a:hover {
+  transform: translateY(-2px);
+  color: #8b5cf6;
 }
 
 /* MOBILE */
@@ -75,5 +98,10 @@
   .formcontainer {
     width: 90%;
     padding: 20px;
+  }
+
+  .sociallinks {
+    flex-direction: column;
+    gap: 10px;
   }
 }
