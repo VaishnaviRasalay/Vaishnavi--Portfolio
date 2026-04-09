@@ -1,5 +1,17 @@
 const projects = [
   {
+    title:"User Dashboard",
+    tech: "React | API | Chart.js | Javascript ",
+    desc:["Developed a dynamic dashboard with CRUD operations",
+  "Implemented pagination, search, and sorting functionality",
+  "Integrated API data for real-time user management",
+  "Built data visualization using charts",
+  "Designed responsive UI with sidebar navigation"
+],
+       github: "https://github.com/VaishnaviRasalay/UsersDashboard",
+    live: "https://users-dashboard-one-murex.vercel.app/"
+  },
+  {
     title: "Weather Application",
     tech: "React | API | CSS",
     desc: [
