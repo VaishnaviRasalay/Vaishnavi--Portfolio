@@ -24,7 +24,7 @@
   width: 300px;
   padding: 20px;
   border-radius: 14px;
-
+  margin:5px 0;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -64,6 +64,7 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  
 }
 
 /* BUTTON BASE */
@@ -81,6 +82,7 @@
   border: 1px solid #6366f1;
   color: #6366f1;
 }
+
 
 /* GITHUB HOVER */
 .project-buttons a:first-child:hover {

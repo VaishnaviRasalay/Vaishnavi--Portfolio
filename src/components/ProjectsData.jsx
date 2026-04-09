@@ -2,7 +2,7 @@ const projects = [
   {
     title:"User Dashboard",
     tech: "React | API | Chart.js | Javascript ",
-    desc:["Developed a dynamic dashboard with CRUD operations",
+    desc:["Developed a dynamic user dashboard with efficient data handling and interactive UI",
   "Implemented pagination, search, and sorting functionality",
   "Integrated API data for real-time user management",
   "Built data visualization using charts",
