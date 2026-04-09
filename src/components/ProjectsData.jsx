@@ -1,6 +1,6 @@
 const projects = [
   {
-    title:"User Dashboard",
+    title:"⭐ User Dashboard Application",
     tech: "React | API | Chart.js | Javascript ",
     desc:["Developed a dynamic user dashboard with efficient data handling and interactive UI",
   "Implemented pagination, search, and sorting functionality",
@@ -12,7 +12,7 @@ const projects = [
     live: "https://users-dashboard-one-murex.vercel.app/"
   },
   {
-    title: "Weather Application",
+    title: "Weather Forecast App",
     tech: "React | API | CSS",
     desc: [
       "Fetched real-time weather data using API",
@@ -34,7 +34,7 @@ const projects = [
     live: "https://vaishnavirasalay.github.io/user-management-app/"
   },
   {
-    title: "Spotify Clone",
+    title: "Spotify UI Clone",
     tech: "HTML | CSS | JavaScript",
     desc: [
       "Designed Spotify-inspired UI layout",

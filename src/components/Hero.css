@@ -44,6 +44,10 @@
   gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  text-decoration: none;
+}
+.hero-buttons .btn{
+  text-decoration: none;
 }
 
 .view-btn {
